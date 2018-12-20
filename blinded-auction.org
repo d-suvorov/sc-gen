@@ -1,0 +1,9 @@
+* Temporal specification
+  1) let ~Cancel = cancelRB or cancelABB~ in
+  2) ~G (close -> !(F bid))~ -- bid cannot happen after close
+  3) ~G !(unbid and (F Cancel))~ -- unbid can happen only after some kind of cancel
+  4) ~G !(reveal and (F close))~ -- reveal can happen only after close (reveal cannot happen before close)
+  5) ~G (finish -> !(F reveal))~ -- reveal cannot happen after finish
+  6) ~G !(withdraw and (F finish))~ -- withdraw can happen only after finish
+  7) ~G (Cancel -> !(F finish))~ -- finish cannot happen after some kind of cancel
+  8) ~G (Cancel -> !(F withdraw))~ -- withdraw cannot happen after some kind of cancel
