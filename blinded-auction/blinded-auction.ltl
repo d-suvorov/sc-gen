@@ -1,0 +1,7 @@
+G(!event(close) || !F( event(bid) ))
+G(!( event(unbid) && F( event(cancelABB || event(cancelRB) ))))
+G(!( event(reveal) && F( event(close) )))
+G(!event(finish) || !F( event(reveal) ))
+G(!( event(withdraw) and F( event(finish) )))
+G(!( event(cancelABB) || event(cancelRB) ) && !F( event(finish) ))
+G(!( event(cancelABB) || event(cancelRB) ) && !F( event(withdraw) ))

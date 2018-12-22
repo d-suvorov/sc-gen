@@ -7,3 +7,5 @@
   6) ~G !(withdraw and (F finish))~ -- withdraw can happen only after finish
   7) ~G (Cancel -> !(F finish))~ -- finish cannot happen after some kind of cancel
   8) ~G (Cancel -> !(F withdraw))~ -- withdraw cannot happen after some kind of cancel
+* Traces
+  
