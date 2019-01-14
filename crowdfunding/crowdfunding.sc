@@ -1,12 +1,12 @@
 donate[1]
 
-donate[1]; getFunds[1]
+donate[1]; getFunds[donationOver]
 ;
 
-donate[1]; getFunds[1]; reclaim[1]
+donate[1]; getFunds[donationOver]; reclaim[funded]
 ;;
 
-getFunds[1]
+getFunds[donationOver]
 
-getFunds[1]; reclaim[1]
+getFunds[donationOver]; reclaim[funded]
 ;
