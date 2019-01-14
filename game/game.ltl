@@ -1,0 +1,3 @@
+G(!event(claim) || !F(event(send)))
+G( !event(send) || X(G( !event(send) || X(!F(event(send))) )) )
+G(!event(send)) || U(!event(claim), event(send))
