@@ -5,6 +5,7 @@ for n_states in {2..5}; do
          --ltl license.ltl \
          --size $n_states \
          --eventNames getLicense,use \
+         --actionNames terminate \
          --result out/license-$n_states.gv \
          --bfsConstraints --globalTree
     dot -Tpng out/license-$n_states.gv > out/license-$n_states.png
