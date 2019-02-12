@@ -1,0 +1,2 @@
+G(!event(getLicense) || X(!F( event(getLicense) )))
+G(!event(getLicense)) || U(!event(use), event(getLicense))
