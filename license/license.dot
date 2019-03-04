@@ -1,0 +1,11 @@
+digraph Automaton {
+    node [shape = circle];
+    0 [style = "bold"];
+    0 -> 3 [label = "use [1] (terminate) "];
+    0 -> 1 [label = "getLicense [1] () "];
+    0 -> 3 [label = "publish [1] (terminate) "];
+    1 -> 1 [label = "use [1] () "];
+    1 -> 2 [label = "publish [1] () "];
+    2 -> 3 [label = "noRemove [1] (terminate) "];
+    2 -> 1 [label = "remove [1] () "];
+}
