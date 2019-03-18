@@ -5,7 +5,7 @@ for n_states in {1..3}; do
          --ltl crowdfunding.ltl \
          --size $n_states \
          --eventNames donate,getFunds,reclaim \
-         --varNames donationOver,funded \
+         --varNames donationOver,notFunded \
          --result out/crowdfunding-$n_states.gv \
          --bfsConstraints --globalTree
     dot -Tpng out/crowdfunding-$n_states.gv > out/crowdfunding-$n_states.png

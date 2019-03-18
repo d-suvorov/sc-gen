@@ -1,5 +1,5 @@
-G(!event(getFunds) || X(!F( event(getFunds) )))
-G(!event(getFunds) || !F( event(donate) ))
+G(!event(getFunds) || X(!F(event(getFunds))))
+G(!event(getFunds) || !F(event(donate)))
 R(event(getFunds), !event(reclaim))
 G(!event(getFunds) || variable(donationOver))
-G(!event(reclaim) || variable(funded))
+G(!event(reclaim) || variable(notFunded))
