@@ -8,5 +8,5 @@ for n_states in {1..5}; do
          --varNames biddingOver,revealOver \
          --result out/blinded-auction-$n_states.gv \
          --bfsConstraints --globalTree
-    dot -Tpng out/blinded-auction-$n_states.gv > out/blinded_auction-$n_states.png
+    dot -Tpng out/blinded-auction-$n_states.gv > out/blinded-auction-$n_states.png
 done
