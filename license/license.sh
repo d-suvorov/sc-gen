@@ -4,7 +4,7 @@ for n_states in {4..8}; do
     java -jar ~/projects/EFSM-tools/jars/fast-automaton-generator.jar license.sc \
          --ltl license.ltl \
          --size $n_states \
-         --eventNames getLicense,getApproval,use,publish,remove,noRemove \
+         --eventNames getLicense,getApproval,getCommission,use,publish,remove,comment,noRemove,noPublish \
          --actionNames terminate \
          --result out/license-$n_states.gv \
          --bfsConstraints --globalTree
