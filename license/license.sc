@@ -105,6 +105,9 @@ getLicense[1]; getApproval[1]; use[1]; use[1]; use[1]; use[1]; use[1]; use[1]; u
 getLicense[1]; getCommission[1]
 ;
 
+getLicense[1]; publish[1]; getCommission[1]
+;;
+
 getLicense[1]; getApproval[1]; getCommission[1]
 ;;
 
