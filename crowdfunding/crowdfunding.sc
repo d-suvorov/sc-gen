@@ -1,22 +1,22 @@
-donate[1]
+donate[~donationOver]
 
-donate[1]; donate[1]
+donate[~donationOver]; donate[~donationOver]
 ;
 
-donate[1]; getFunds[donationOver]
+donate[~donationOver]; getFunds[donationOver]
 ;
 
-donate[1]; getFunds[donationOver]; reclaim[notFunded]
+donate[~donationOver]; getFunds[donationOver]; reclaim[donationOver&notFunded]
 ;;
 
-donate[1]; getFunds[donationOver]; reclaim[notFunded]; reclaim[notFunded]
+donate[~donationOver]; getFunds[donationOver]; reclaim[donationOver&notFunded]; reclaim[donationOver&notFunded]
 ;;;
 
 getFunds[donationOver]
 
 
-getFunds[donationOver]; reclaim[notFunded]
+getFunds[donationOver]; reclaim[donationOver&notFunded]
 ;
 
-getFunds[donationOver]; reclaim[notFunded]; reclaim[notFunded]
+getFunds[donationOver]; reclaim[donationOver&notFunded]; reclaim[donationOver&notFunded]
 ;;
