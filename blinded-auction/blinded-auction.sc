@@ -1,25 +1,11 @@
-bid[1]
-
-bid[1]; close[biddingOver]
-;
-
-bid[1]; close[biddingOver]; reveal[1]
-;;
-
-bid[1]; close[biddingOver]; reveal[1]; finish[revealOver]
-;;;
-
-bid[1]; close[biddingOver]; reveal[1]; finish[revealOver]; withdraw[1]
+bid[~biddingOver&~revealOver]; close[biddingOver&~revealOver]; reveal[biddingOver&~revealOver]; finish[biddingOver&revealOver]; withdraw[biddingOver&revealOver]
 ;;;;
 
-cancel[1]
-
-
-cancel[1]; unbid[1]
+cancel[biddingOver&~revealOver]; unbid[biddingOver&~revealOver]
 ;
 
-bid[1]; cancel[1]; unbid[1]
+bid[~biddingOver&~revealOver]; cancel[biddingOver&~revealOver]; unbid[biddingOver&~revealOver]
 ;;
 
-bid[1]; close[biddingOver]; reveal[1]; cancel[1]; unbid[1]
+bid[~biddingOver&~revealOver]; close[biddingOver&~revealOver]; reveal[biddingOver&~revealOver]; cancel[biddingOver&~revealOver]; unbid[biddingOver&~revealOver]
 ;;;;
